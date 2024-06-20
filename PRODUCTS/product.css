@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+.logo img{
+    width:145px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #4b2e2e;
+    padding: 10px 20px;
+    border: 1px solid #4b2e2e;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #4b2e2e;
+    color: #ffffff;
+}
+
+
+.cart {
+    text-align: center;
+  
+}
+
+.cart svg {
+    width: 32px; /* Adjust size as needed */
+    height: 32px; /* Adjust size as needed */
+}
+
+
+
+#search-input{
+    top:15px;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.cart-count{
+    color:rgb(13, 110, 45);
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h2 {
+    font-size: 13px;
+}
+
+.product-card p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #18031a;
+}
+
+.product-card input {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.product-card .add-to-cart {
+    background-color: #4b2e2e;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: chocolate;
+}
+
+.image-slider {
+    position: relative;
+    width: 95%;
+    height: 330px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.image-slider img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-slider img.active {
+    opacity: 1;
+    position: relative;
+}
+
+.image-slider img.inactive {
+    opacity: 0;
+    position: absolute;
+}
+
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    right:0;
+    top:0;
+    width:35%;
+    height:100%;
+    overflow:auto;
+    background-color:#eaeef3;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-content{
+    font-size: 10px;
+    background-color: rgb(169, 198, 240);
+    margin: 10px auto;
+    padding:10px;
+    border: 1px solid black;
+    width:100%;
+    height:70vh;
+    max-width:500px;
+}
+
+.close-button{
+    color:rgb(18, 7, 29);
+    float:right;
+    font-size:33px;
+    font-weight:bold;
+
+}
+
+.close-button:hover,.close-button:focus{
+    color:#d43b3b;
+    text-decoration:none;
+    cursor:pointer;
+
+}
+
+
+.cart-items{
+    margin-top:20px;
+}
+
+.cart-item{
+    display:flex;
+    justify-content: space-between;
+    padding:10px 0;
+}
+
+.cart-item h3,
+.cart-item p{
+    margin:0;
+}
+
+/* Existing styles */
+
+/* Add these new styles for the increment and decrement buttons */
+.cart-item .quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item .quantity-control button {
+    background-color: #ccc;
+    border: none;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.cart-item .quantity-control button:hover {
+    background-color: #bbb;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links a {
+        padding: 1em;
+        display: block;
+    }
+}
+
+    
+
+
+
+.checkout-button,
+.close-cart-button {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.close-cart-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.checkout-button:hover{
+    background-color: #86e4a5;
+}
+
+.close-cart-button:hover{
+    background-color: #4f99dd;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #82c2db;
+    color: #fff;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.footer .social-links a:hover {
+    color: #a74343;
+}
