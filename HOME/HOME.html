@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honest Chocolate</title>
+    <link rel="stylesheet" href="HomeStyles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../HOME/ImagesHome/Honest-Chocolate-Logo-400x175.png" alt="Logo">
+        </div>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../HOME/HOME.html">Home</a></li>
+                <li><a href="../PRODUCTS/PRODUCTS.html">Products</a></li>
+                <li><a href="../CONTACT US/ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <div class="content">
+            <h2>Savor Every Bite</h2>
+            <p>Discover the perfect chocolate experience crafted right here in Cape Town. Pure bliss in every taste. Honest Chocolate is a <br>
+                small artisanal Bean to Bar chocolate company based in Cape Town, South Africa. We believe in keeping things handcrafted, using old-school methods, using quality organically produced ingredients, and making a pure chocolate that has a deliciously distinct feel and taste.</p>
+                <div class="buttons">
+                    <a href="#" class="btn" id="login-btn">Login</a>
+                    <a href="#" class="btn" id="signup-btn">Signup</a>
+                </div>
+        </div>
+
+        <div class="slideshow">
+            <img id="slideshow-img" src="../HOME/ImagesHome/image1.jpg" alt="Slideshow Image">
+        </div>
+    </main>
+    <section class="about-us">
+            <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-item">
+                <img src="../HOME/ImagesHome/Process.png" alt="Chain">
+                <h3>Positive chain of production</h3>
+                <p>We produce our chocolate with ‘The Chain of Positivity’ in mind at all times – right through the supply chain. Our goal is to have ethical consideration for people and the environment by sourcing local, organic, and fair.</p>
+            </div>
+            <div class="about-item">
+                <img src="../HOME/ImagesHome/Handmade.png" alt="Handmade">
+                <h3>What handmade means to us</h3>
+                <p>We practise personal accountability in the thoughtful and selective making of our chocolate products, which leads to their fantastic taste.</p>
+            </div>
+            <div class="about-item">
+                <img src="../HOME/ImagesHome/Dark.png" alt="Dark">
+                <h3>We’re not afraid of the dark...</h3>
+                <p>We want to showcase the uniqueness and origin of every batch of cacao beans, and not compromise it by over-flavouring or over-sugaring.</p>
+            </div>
+            <div class="about-item">
+                <img src="../HOME/ImagesHome/Humour21.png" alt="Humour">
+                <h3>Everything tempered by humour</h3>
+                <p>We’re inspired by the change in people’s faces as they taste our chocolate for the first time, and the fun, creativity and collaboration put into everything we produce.</p>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="../HOME/ImagesHome/hero-image.jpg" alt="Hero Image">
+        </div>
+    </section>
+
+
+        <section class="makingChocolate">
+            <h2>Making The Chocolate</h2>
+            <div class="makingChocolate">
+<br>
+             <h3>Our Simple Ingredients</h3> 
+             
+            
+            <p>
+                Only two simple ingredients go into making Honest Chocolate: Organic Tanzanian Cacao and a Sweetener
+                <br>
+                Depending on the slab, this will either be Unrefined Cane Sugar or Coconut Blossom Sugar.
+            </p>
+
+            <h3>How our chocolate is made</h3>
+            <p>
+                All our chocolate is made by hand using old school methods in a small production kitchen in Woodstock, Cape Town. We roast, winnow, and grind the beans we receive from Tanzania ourselves,<br>
+                and hand temper the chocolate on a granite slab.
+
+                Every month we host a chocolate making workshop at our Woodstock Exchange Production Kitchen.
+            </p>
+
+
+            </div>
+        </section>
+
+
+    <section class="how-we-started">
+        <h2>How did we get here</h2>
+        <div class="how-content">
+            <p>It all started from a bit of experimentation with raw cacao. Anthony made a few simple chocolates from raw cacao powder as a healthy treat for himself and friends. When they were polished off in seconds, with demands for more, he knew he was onto something. Over the next few months he taught himself more about the art and science of chocolate making, an endeavour that eventually developed into Honest Chocolate.</p>
+            <p>Meanwhile Michael was also experimenting with raw chocolate in London, with similar results. So on his return to Cape Town, when the opportunity came to join Anthony on his chocolate adventure, the decision wasn’t all that difficult.</p>
+            <p>The attraction was the diversity of making chocolate and being involved in something that continually changes, something both fun and rewarding.</p>
+            <p>And it has been just that ever since. The first years of Honest Chocolate were spent working with raw cacao from Ecuador, but with the Chain of Positivity in mind our slabs are now made with organically produced Tanzanian cacao beans which we roast, grind, and temper in our Woodstock production kitchen. It was a three-year process to find and build a relationship with Kokoa Kamili who supply us with our Tanzanian beans, but our efforts to create Bean to Bar ethical chocolate with a smaller footprint on the environment have been well worth it.</p>
+        </div>
+        <div class="image">
+            <img src="../HOME/ImagesHome/HCC_54-scaled.jpg" alt="How We Started">
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div id="login-form" class="form">
+                    <h2>Login</h2>
+                    <form id="login-form" method="POST" action="login.php">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="login-email" required>
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="login-password" required>
+                        <input type="checkbox" id="show-login-password"> Show Password
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div id="signup-form" class="form">
+                    <h2>Signup</h2>
+                    <form id="signupForm" method="POST" action="register.php">
+                        <label for="signup-name">Name:</label>
+                        <input type="text" id="signup-name" name="signup-name" required>
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" name="signup-email" required>
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" name="signup-password" required>
+                        <label for="signup-confirm-password">Confirm Password:</label>
+                        <input type="password" id="signup-confirm-password" name="signup-confirm-password" required>
+                        <input type="checkbox" id="show-signup-password"> Show Password
+                        <p id="error-message" style="color: red; display: none;"></p>
+                        <button type="submit">Signup</button>
+                    </form>
+                </div>
+
+
+    </section>
+
+    <div class="footer">
+        <p>Honest Chocolate</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/honestchocolate/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/HonestChoc" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/honestchocolate/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="cafe@honestchocolate.co.za" aria-label="email"><i class="fas fa-envelope"></i></a>
+        </div>
+    <script src="home.js">
+    </script>
+</body>
+</html>
